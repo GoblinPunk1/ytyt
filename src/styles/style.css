@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+div.container {
+  position: relative;
+  left: -200px;
+}
+.my-image {
+  height: 959px;
+  width: 900px;
+  position: absolute;
+  z-index: 100;
+}
+
+.frame {
+  position: absolute;
+  left: 256px;
+  top: 41px;
+  width: 390px;
+  border-radius: 50px;
+  height: 876px;
+  z-index: 101;
+}

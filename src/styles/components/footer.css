@@ -1,0 +1,71 @@
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 80vw;
+  height: 68px;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+footer > nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  margin: auto auto;
+  width: 95%;
+}
+
+.footer-nav > li {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--second-font-color);
+  overflow: hidden;
+  cursor: pointer;
+  font-size: small;
+  padding: 2px;
+  transition: all 0.1s;
+}
+
+.footer-nav > li.active {
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+  width: 110%;
+  scale: 1.1;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  fill: var(--second-font-color);
+  stroke: var(--second-font-color);
+  color: var(--second-font-color);
+}
+
+.footer-nav > li.active .footer-icon {
+  fill: var(--second-base-color);
+  stroke: var(--second-base-color);
+  color: var(--second-base-color);
+}
+
+.footer-nav .item-desc {
+  margin: 0;
+}
