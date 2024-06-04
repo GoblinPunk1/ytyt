@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--primary-color);
-  height: 100vh;
+  height: var(--tg-viewport-height);
   padding: 0;
   margin: 0;
   overflow-y: auto;

@@ -21,22 +21,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.1s ease;
 }
 
 .main-person .image-border {
-  width: 205px;
-  height: 205px;
+  width: 225px;
+  height: 225px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(33, 51, 184);
+  background: linear-gradient(rgb(0, 123, 255) 0%, rgb(1, 20, 72) 100%);
   border-radius: 50%;
   border: 1px solid rgb(9, 6, 72) 100%;
 }
 
 .person-image {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
   padding: 20px;
   border-radius: 50%;
   background-color: var(--second-base-color);
