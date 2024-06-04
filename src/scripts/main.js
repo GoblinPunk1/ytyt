@@ -28,5 +28,4 @@ function touch(touch) {
 
 imageCard.addEventListener('touchend', function (event) {
   navigator.vibrate(100);
-  resetImageStyle();
 });
