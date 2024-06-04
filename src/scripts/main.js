@@ -14,7 +14,7 @@ function resetImageStyle() {
 
 function touch(touch) {
   const rect = imageCard.getBoundingClientRect();
-  const offsetX = touch.clientX - rect.left; // Use touches[0] for touch event
+  const offsetX = touch.clientX - rect.left;
   const offsetY = touch.clientY - rect.top;
   const centerX = rect.width / 2;
   const centerY = rect.height / 2;
@@ -23,6 +23,7 @@ function touch(touch) {
   const rotateY = ((centerX - offsetX) / centerX) * 15;
 
   imageCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  setTimeout(resetImageStyle, 100);
 }
 
 imageCard.addEventListener('touchend', function (event) {
