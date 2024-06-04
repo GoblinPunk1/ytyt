@@ -5,6 +5,7 @@ telegramAPI.expand();
 const imageCard = document.querySelector('.js-main-person');
 
 imageCard.addEventListener('touchstart', event => {
+  event.preventDefault();
   [...event.touches].forEach(touch);
 });
 
