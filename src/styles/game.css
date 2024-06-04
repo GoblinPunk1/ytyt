@@ -27,3 +27,7 @@
 .my-frames {
   display: none;
 }
+
+* {
+  user-select: none;
+}
