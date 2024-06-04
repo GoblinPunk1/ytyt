@@ -14,14 +14,15 @@ function resetImageStyle() {
 }
 
 function touch(touch) {
+  const angle = 25;
   const rect = imageCard.getBoundingClientRect();
   const offsetX = touch.clientX - rect.left;
   const offsetY = touch.clientY - rect.top;
   const centerX = rect.width / 2;
   const centerY = rect.height / 2;
 
-  const rotateX = ((offsetY - centerY) / centerY) * 15;
-  const rotateY = ((centerX - offsetX) / centerX) * 15;
+  const rotateX = ((offsetY - centerY) / centerY) * angle;
+  const rotateY = ((centerX - offsetX) / centerX) * angle;
 
   imageCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   setTimeout(resetImageStyle, 100);
