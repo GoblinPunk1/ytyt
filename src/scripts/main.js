@@ -5,6 +5,7 @@ telegramAPI.expand();
 const imageCard = document.querySelector('.js-main-person');
 
 imageCard.addEventListener('click', event => {
+  navigator.vibrate(30);
   const rect = imageCard.getBoundingClientRect();
   const offsetX = event.clientX - rect.left;
   const offsetY = event.clientY - rect.top;
