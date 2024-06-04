@@ -1,3 +1,7 @@
+import { telegramAPI } from './telegram';
+
+telegramAPI.expand();
+
 const imageCard = document.querySelector('.js-main-person');
 
 imageCard.addEventListener('click', event => {
