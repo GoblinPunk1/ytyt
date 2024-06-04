@@ -5,8 +5,6 @@ telegramAPI.expand();
 const imageCard = document.querySelector('.js-main-person');
 
 imageCard.addEventListener('touchstart', event => {
-  navigator.vibrate(100);
-  console.log(event.touches);
   [...event.touches].forEach(touch);
 });
 
@@ -25,5 +23,9 @@ function touch(touch) {
   const rotateY = ((centerX - offsetX) / centerX) * 15;
 
   imageCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  setTimeout(resetImageStyle, 100);
 }
+
+imageCard.addEventListener('touchend', function (event) {
+  navigator.vibrate(100);
+  resetImageStyle();
+});
